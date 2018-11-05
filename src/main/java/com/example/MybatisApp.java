@@ -8,11 +8,11 @@ import org.springframework.boot.orm.jpa.EntityScan;
 import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.context.annotation.ComponentScan;
 
-@SpringBootApplication
-//@ComponentScan(basePackages = {"com.example"})
-@EntityScan("com.example.entity")
+//@SpringBootApplication
+@ComponentScan(basePackages = {"com.example"})
+//@EntityScan("com.example.entity")
 @MapperScan(basePackages = {"com.example.test01.mapper","com.example.test02.mapper"})
-//@EnableAutoConfiguration
+@EnableAutoConfiguration
 public class MybatisApp {
     public static void main(String[] args){
         SpringApplication.run(MybatisApp.class);

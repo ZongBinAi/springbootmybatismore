@@ -16,7 +16,7 @@ import javax.sql.DataSource;
 
 
 @Configuration // 注册到springboot容器中
-@MapperScan(basePackages = "com.example.test01", sqlSessionFactoryRef = "test1SqlSessionFactory")
+@MapperScan(basePackages = "com.example.test01.mapper", sqlSessionFactoryRef = "test1SqlSessionFactory")
 public class DataSource1Config {
 
 	@Bean(name = "test1DataSource")
