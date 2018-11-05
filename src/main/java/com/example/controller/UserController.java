@@ -25,12 +25,12 @@ public class UserController {
 
     @RequestMapping("/findByName01")
     public User findByName01() {
-        return userService.findByName01("张飞");
+        return userService.findByName01("james");
     }
 
     @RequestMapping("/findByName02")
     public User findByName02() {
-        return userService.findByName02("james");
+        return userService.findByName02("张飞");
     }
 
 }
